@@ -1,53 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Search</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-            background:#f2f5f9;
-        }
-
-        .search-box{
-            background:white;
-            padding:30px;
-            border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,0.2);
-        }
-
-        input{
-            width:300px;
-            padding:12px;
-            font-size:16px;
-        }
-
-        button{
-            padding:12px 20px;
-            margin-left:10px;
-            background:#0047AB;
-            color:white;
-            border:none;
-            border-radius:5px;
-            cursor:pointer;
-        }
-
-        button:hover{
-            background:#003380;
-        }
-    </style>
-</head>
-<body>
-
-<div class="search-box">
-    <form action="https://formspree.io/f/xlgqegve" method="POST">
-        <input type="text" name="search" placeholder="Search here..." required>
-        <button type="submit">Search</button>
-    </form>
-</div>
-
-</body>
-</html>
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xlgqegve"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
